@@ -11,7 +11,6 @@
     <groupId>com.barteksmalec</groupId>
     <artifactId>spring-okta-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
     <name>spring-okta-demo</name>
     <description>spring-okta-demo</description>
     <properties>
@@ -74,7 +73,7 @@
                 <artifactId>jib-maven-plugin</artifactId>
                 <configuration>
                     <from>
-                        <image>tomcat:8.0.51-jre8-alpine</image>
+                        <image>adoptopenjdk:11-jre-hotspot</image>
                     </from>
                     <to>
                         <image>${REPO_URL}/spring-okta-demo</image>

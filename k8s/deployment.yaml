@@ -22,7 +22,7 @@ spec:
         app: spring-okta-demo
     spec:
       containers:
-      - image: IMAGE_URL/spring-okta-demo:0.0.1-SNAPSHOT
+      - image: IMAGE_URL/spring-okta-demo
         imagePullPolicy: IfNotPresent
         name: spring-okta-demo
         resources:

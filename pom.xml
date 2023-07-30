@@ -64,7 +64,7 @@
                         <image>adoptopenjdk:11-jre-hotspot</image>
                     </from>
                     <to>
-                        <image>spring-okta-demo</image>
+                        <image>${REPO_URL}/spring-okta-demo</image>
                         <tags>${project.version}</tags>
                     </to>
                 </configuration>

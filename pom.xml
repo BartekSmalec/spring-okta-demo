@@ -11,6 +11,7 @@
     <groupId>com.barteksmalec</groupId>
     <artifactId>spring-okta-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
     <name>spring-okta-demo</name>
     <description>spring-okta-demo</description>
     <properties>
@@ -68,7 +69,7 @@
                     </excludes>
                 </configuration>
             </plugin>
-            <plugin>
+       <!--     <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
                 <configuration>
@@ -79,6 +80,25 @@
                         <image>${REPO_URL}/spring-okta-demo</image>
                         <tags>${project.version}</tags>
                     </to>
+                </configuration>
+            </plugin>-->
+
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.6</version>
+                <executions>
+                    <execution>
+                        <id>default</id>
+                        <goals>
+                            <goal>push</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <repository>${REPO_URL}/${project.name}</repository>
+                    <tag>${project.version}</tag>
+                    <skipDockerInfo>true</skipDockerInfo>
                 </configuration>
             </plugin>
         </plugins>

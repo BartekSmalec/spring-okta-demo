@@ -34,5 +34,6 @@ spec:
       targetPort: 9296
   selector:
     app: spring-okta-demo
-
+  sessionAffinity: ClientIP
+  type: LoadBalancer
 

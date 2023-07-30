@@ -22,7 +22,7 @@ spec:
         app: spring-okta-demo
     spec:
       containers:
-        - image: europe-central2-docker.pkg.dev/cool-eye-394414/spring-okta-demo/spring-okta-demo
+        - image: IMAGE_URL/spring-okta-demo
           imagePullPolicy: IfNotPresent
           name: spring-okta-demo
           resources:

@@ -22,7 +22,7 @@ spec:
         app: spring-okta-demo
     spec:
       containers:
-        - image: IMAGE_URL/spring-okta-demo:0.0.1-SNAPSHOT
+        - image: IMAGE_URL/spring-okta-demo
           imagePullPolicy: IfNotPresent
           name: spring-okta-demo
           resources:
@@ -57,7 +57,7 @@ metadata:
   namespace: default
 spec:
   ports:
-    - nodePort: 30701
+    - nodePort: 30702
       port: 8080
       protocol: TCP
       targetPort: 8080

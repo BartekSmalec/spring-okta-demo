@@ -69,21 +69,21 @@
                     </excludes>
                 </configuration>
             </plugin>
-       <!--     <plugin>
+            <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
                 <configuration>
                     <from>
-                        <image>openjdk:11</image>
+                        <image>tomcat:8.0.51-jre8-alpine</image>
                     </from>
                     <to>
                         <image>${REPO_URL}/spring-okta-demo</image>
                         <tags>${project.version}</tags>
                     </to>
                 </configuration>
-            </plugin>-->
+            </plugin>
 
-            <plugin>
+           <!-- <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.4.8</version>
@@ -101,7 +101,7 @@
                     <tag>${project.version}</tag>
                     <skipDockerInfo>true</skipDockerInfo>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
     <repositories>

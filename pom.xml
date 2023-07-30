@@ -91,12 +91,13 @@
                     <execution>
                         <id>default</id>
                         <goals>
+                            <goal>build</goal>
                             <goal>push</goal>
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>${REPO_URL}/${project.name}</repository>
+                    <repository>infamia/${project.name}</repository>
                     <tag>${project.version}</tag>
                     <skipDockerInfo>true</skipDockerInfo>
                 </configuration>

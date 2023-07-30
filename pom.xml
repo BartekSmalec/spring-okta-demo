@@ -97,7 +97,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>infamia/${project.name}</repository>
+                    <repository>${REPO_URL}/${project.name}</repository>
                     <tag>${project.version}</tag>
                     <skipDockerInfo>true</skipDockerInfo>
                 </configuration>

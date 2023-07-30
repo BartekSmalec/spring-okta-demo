@@ -15,7 +15,7 @@ spec:
         app: spring-okta-demo
     spec:
       containers:
-      - image: IMAGE_URL/spring-okta-demo
+      - image: IMAGE_URL/spring-okta-demo:0.0.1-SNAPSHOT
         imagePullPolicy: Always
         name: spring-okta-demo
         ports:

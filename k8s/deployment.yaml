@@ -7,7 +7,6 @@ metadata:
   namespace: default
 spec:
   replicas: 2
-  minReadySeconds: 45
   selector:
     matchLabels:
       app: spring-okta-demo
@@ -22,8 +21,8 @@ spec:
         app: spring-okta-demo
     spec:
       containers:
-      - image: IMAGE_URL/spring-okta-demo
-        imagePullPolicy: IfNotPresent
+      - image: IMAGE_URL/spring-okta-demo:0.0.1-SNAPSHOT
+        imagePullPolicy: Always
         name: spring-okta-demo
         resources:
           limits:
